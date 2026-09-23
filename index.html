@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "eae0a294-1b66-4d9a-abdc-9d01a4cf5726",
+    });
+  });
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Escala | Gestão de Escalas</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#120E3D" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registrado!', reg))
+            .catch(err => console.error('Erro ao registrar Service Worker:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

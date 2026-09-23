@@ -1,0 +1,24 @@
+{
+  "name": "IG Escala - Gestão de Escalas",
+  "short_name": "IG Escala",
+  "description": "Sistema moderno de gestão de escalas ministeriais e coordenação de equipes para igrejas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#120E3D",
+  "theme_color": "#120E3D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
